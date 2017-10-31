@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- Mirrored from my.izim.az/login by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Oct 2017 12:03:27 GMT -->
+    <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate" />
+        <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/frame.css" rel="stylesheet" type="text/css">
+        <link href="css/faq.css" rel="stylesheet" type="text/css">
+        <title>IZ</title>
+
+        <script src="js/faq.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    </head>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $("#onmap").hide();
+            $("#FAQ").hide();
+            $("#slide").hide();
+
+            $("#AboutTerminal").click(function () {
+                $("#about").show();
+                $("#onmap").hide();
+                $("#FAQ").hide();
+                $("#slide").hide();
+            });
+            $("#MapTerminal").click(function () {
+                $("#onmap").show();
+                $("#about").hide();
+                $("#FAQ").hide();
+                $("#slide").hide();
+            });
+            $("#FAQTerminal").click(function () {
+                $("#FAQ").show();
+                $("#onmap").hide();
+                $("#about").hide();
+                $("#slide").hide();
+            });
+            $("#ImageTerminal").click(function () {
+                $("#slide").show();
+                $("#onmap").hide();
+                $("#about").hide();
+                $("#FAQ").hide();
+            });
+
+
+        });
+
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#divPB").hide();
+            
+            $("#PB").click(function () {
+                $("#divPB").animate({
+                    width: "toggle"
+                });
+
+            });
+        });
+
+    </script>
+
+
+    <body style="background:url(j/bggg_az.png) top center no-repeat,url(j/x.png) repeat-x">
+        <div style="min-height:1000px;">
+            <div style="width:1100px; margin:auto;">
+                <div class="header">
+                    <div style="margin-top:80px;width:60px;height:18px">
+                        <img src="i/spacer.gif" width="60" height="18" usemap="#Map">
+                        <map name="Map" class="languages">
+                            <area shape="rect" coords="0 ,0,28,18" lang="az" href="javascript://" alt="Azərbaycan dili">
+                            <area shape="rect" coords="32,0,60,18" lang="ru" href="javascript://" alt="Русский язык">
+                        </map>
+                        <div class="gotomainpage">
+                            <img src="i/xxx.png" width="220" height="26" alt="" onclick="location.href = 'http://www.izim.az/az/'" style="cursor: pointer"/>
+                        </div>
+                        <div class="support">
+                            <img src="i/xxx.png" width="135" height="26" alt="" onclick="location.href = 'mailto:support@izim.az'" style="cursor: pointer"/>
+                        </div>
+
+                    </div>
+                    <div class="bonus"></div>
+                    <div class="userinfo">
+
+                        <div class="uname"></div>
+                        <div class="ulinks">
+                        </div>
+
+                    </div>
+                </div></div>
+            <div style="height:300px; width:1115px; margin:auto; margin-top: -79px">
+
+            </div>
+            <div style="width:1215px; margin:auto;">
+
+
+
+                <div class="hh" style="background:url(i/hh_bg.png);">
+
+                    <div id="mainaddlinkblock">
+                        <!-- ------ -->
+                        <div class="tab">
+                            <button class="tablinks" id="AboutTerminal">Terminallar haqqında</button>
+                            <button class="tablinks" id="MapTerminal">Terminallar xəritədə</button>
+                            <button class="tablinks" id="FAQTerminal">FAQ</button>
+                            <button class="tablinks" id="ImageTerminal">Şəkillər</button>
+                        </div>
+
+                        <div id="about" class="col-sm-12">
+                            <h3 style="text-align: center">Terminal haqqında</h3>
+                            <!--                            <div class="col-sm-3">
+                                                          
+                                                            <button id="BM">BakuMoll</button><br><br>
+                                                            <button id="X">Xirdalan</button><br>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <div id="divPB" style="background:url(i/image/izipay2.fw.png)"></div>
+                                                            <div id="divBM" style="background:url(i/image/chicago.jpg)"></div>
+                                                            <div id="divX" style="background:url(i/image/ny.jpg)"></div>
+                                                        </div>-->
+                            <button class="btn btn-warning" type="submit" id="PB" style="background-color: #FEB500"><b>PortBaku</b></button>
+                            <button class="btn btn-warning" type="submit" type="button" id="BM" style="background-color: #FEB500"><b>BakuMoll</b></button>
+                            <button class="btn btn-warning" type="submit" id="X" style="background-color: #FEB500"><b>Xırdalan</b></button>
+                            <hr>
+                            <div class="box col-sm-12" id="divPB" >
+                                <div class="col-sm-4">
+                                <img src="i/image/izipay2.fw.png" style="width: 30%;height: 60%"/>
+                                </div>
+                                <div class="col-sm-8">
+                                <h6>Платёжный терминал (self-service terminals, SSTs) — аппаратно-программный комплекс, обеспечивающий приём платежей от физических лиц в режиме самообслуживания. Для платёжного терминала характерна высокая степень автономности его работы. Контроль за работой можно производить через Интернет.
+                                    С помощью экранного меню терминала пользователь производит поиск и/или выбирает услугу, которую он планирует 
+                                    оплатить, указывает требуемые реквизиты (номер телефона, номер лицевого счёта и др.) Терминал проверяет правильность введённой информации и при возможности, проверяет существование данного счёта и возможности его пополнения. Пользователь вносит желаемую сумму наличных 
+                                    денег, последовательно вставляя купюру за купюрой в купюроприёмник, который распознает подлинность наличных денег, их номинал, и производит возврат купюр, не прошедших проверку на подлинность. После окончания внесения наличных средств пользователь нажимает кнопку «Оплатить», а терминал в 
+                                    ответ распечатывает и выдает пользователю чек о данной транзакции.С помощью GPRS-модема или другого средства связи с сетью Интернет, терминал пересылает введённые данные о платеже серверу платёжной системы, обеспечивающей обработку платежа. Обработав данные, сервер платёжной системы передаёт 
+                                    их на шлюз сервера организации, в адрес которой предназначается платёж. После этого сумма денег, внесённая в терминал, за вычетом комиссии, поступает на счёт пользователя.Зачастую терминал имеет возможность проверять только правильность формата введённых реквизитов, но не в силах проверить успешность проведения платежа. 
+                                    В этом случае, а также в случае неверно указанных реквизитов, платёж будет принят терминалом, но так и не поступит на счёт пользователю до его обращения в службу технической поддержки терминальной компании.</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="onmap" class="tabcontent">
+                            <h3>Terminallar xəritədə</h3>
+
+                            <div id="map" style="clear:both; height:480px;"></div>
+
+                            <script async defer
+                                    <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD70BJGOvxA99yAsVY64JjC_jtr2Y8dKw4&callback=initMap">-->
+                            </script>
+                        </div>
+
+
+                        <div id="FAQ" class="tabcontent">
+                            <div class="container">
+                                <div class="accordion-option">
+                                    <h3 class="title">Qaydalar</h3>
+                                    
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    İZ Terminal nədir?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    İZ Terminalın işləmə prinsipi
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    İZ Terminalda işləmə qaydası
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    İZ Terminalda ödəniş vaxtı hər-hansı xəta baş versə istifadəçi nə etməlidir?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="accordion-body collapse" role="tabpanel" aria-labelledby="headingFour">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="slide" class="tabcontent">
+                            <h3>Şəkillər</h3>
+                            <div class="container">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+
+                                        <div class="item active">
+                                            <img src="i/image/chicago.jpg" alt="Los Angeles" style="width:100%;">
+                                            <div class="carousel-caption">
+                                                <h3>Los Angeles</h3>
+                                                <p>LA is always so much fun!</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="i/image/la.jpg" alt="Chicago" style="width:100%;">
+                                            <div class="carousel-caption">
+                                                <h3>Chicago</h3>
+                                                <p>Thank you, Chicago!</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="i/image/ny.jpg" alt="New York" style="width:100%;">
+                                            <div class="carousel-caption">
+                                                <h3>New York</h3>
+                                                <p>We love the Big Apple!</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div><img src="i/hh_end.png" width="1216" height="35" alt=""/> </div>
+        </div>
+        <div class="cc_copy">
+
+            <div class="copy_az">
+                <div class="c_1_az"></div>
+                <div class="c_2_az"></div>
+                <div class="c_3_az"></div>
+            </div>
+        </div>
+
+    </body>
+
+
+
+</html>
